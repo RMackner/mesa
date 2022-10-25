@@ -3,7 +3,7 @@
 %global maj_ver 9
 %global min_ver 0
 %global patch_ver 2
-%global commit cbbff8857e49c5e4615e2f8e21dd18cc6317c252
+%global commit 73d7c8a9e5bb31b48f11886fa3a82946fa4563f7
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global build_timestamp %(date +"%Y%m%d")
 %global gitrel .%{build_timestamp}.git%{shortcommit}
