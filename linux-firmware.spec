@@ -13,7 +13,7 @@ URL:		http://www.kernel.org/
 BuildArch:	noarch
 
 Source0:	https://www.kernel.org/pub/linux/kernel/firmware/%{name}-%{version}.tar.xz
-#Patch1:		0001-Add-support-for-compressing-firmware-in-copy-firmwar.patch
+Patch1:		0001-Add-support-for-compressing-firmware-in-copy-firmwar.patch
 
 BuildRequires:	make
 Requires:	linux-firmware-whence
