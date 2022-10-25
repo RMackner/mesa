@@ -5,7 +5,7 @@
 %define _binaries_in_noarch_packages_terminate_build 0
 
 Name:		linux-firmware
-Version:	20221012
+Version:	20220815
 Release:	%{firmware_release}%{?dist}
 Summary:	Firmware files used by the Linux kernel
 License:	GPL+ and GPLv2+ and MIT and Redistributable, no modification permitted
@@ -323,8 +323,11 @@ Firmware for Netronome Smart NICs
 mkdir -p %{buildroot}/%{_firmwarepath}
 mkdir -p %{buildroot}/%{_firmwarepath}/updates
 
-
+%if 0%{?fedora} >= 34 || 0%{?rhel} >= 9
+make DESTDIR=%{buildroot}/ FIRMWAREDIR=%{_firmwarepath} installcompress
+%else
 make DESTDIR=%{buildroot}/ FIRMWAREDIR=%{_firmwarepath} install
+%endif
 
 #Cleanup files we don't want to ship
 pushd %{buildroot}/%{_firmwarepath}
