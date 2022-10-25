@@ -17,7 +17,7 @@ Summary:        Mesa libGLU library
 
 License:        MIT
 URL:            https://gitlab.freedesktop.org/mesa
-Source0:         %{build_repo}/archive/%{commit}/glu-%{commit}.tar.gz
+Source0:         %{build_repo}/%{commit}/glu-%{commit}.tar.gz
 #Source2:        make-git-snapshot.sh
 
 BuildRequires: make
