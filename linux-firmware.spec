@@ -323,11 +323,8 @@ Firmware for Netronome Smart NICs
 mkdir -p %{buildroot}/%{_firmwarepath}
 mkdir -p %{buildroot}/%{_firmwarepath}/updates
 
-%if 0%{?fedora} >= 34 || 0%{?rhel} >= 9
-make DESTDIR=%{buildroot}/ FIRMWAREDIR=%{_firmwarepath} installcompress
-%else
+
 make DESTDIR=%{buildroot}/ FIRMWAREDIR=%{_firmwarepath} install
-%endif
 
 #Cleanup files we don't want to ship
 pushd %{buildroot}/%{_firmwarepath}
