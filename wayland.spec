@@ -41,12 +41,6 @@ BuildRequires:  meson
 BuildRequires:  pkgconfig(libffi)
 	
 BuildRequires:  xmlto
-
-BuildRequires:  clang
-
-BuildRequires:  llvm
-
-BuildRequires:  llvm-devel
 	
  
 	
