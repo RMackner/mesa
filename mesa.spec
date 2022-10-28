@@ -6,7 +6,7 @@
 %global build_repo https://gitlab.freedesktop.org/mesa/mesa/-/archive/
 %define version_string 22.3.0
 
-%define commit 89b93f7e344830b82f54054a9c7966ee383216a9
+%define commit 3ef88cd0a2de26e56def43db969f98c80235f065
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global build_timestamp %(date +"%Y%m%d")
 %global rel_build git.%{build_timestamp}.%{shortcommit}%{?dist}
