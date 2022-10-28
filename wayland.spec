@@ -41,6 +41,12 @@ BuildRequires:  meson
 BuildRequires:  pkgconfig(libffi)
 	
 BuildRequires:  xmlto
+
+BuildRequires:  clang
+
+BuildRequires:  llvm
+
+BuildRequires:  llvm-devel
 	
  
 	
@@ -148,9 +154,8 @@ Wayland server library
 	
 %build
 	
-%meson
-	
-%meson_build
+meson build-gcc
+CC=clang CXX=clang++ meson build-clang
 	
 	
 %install
