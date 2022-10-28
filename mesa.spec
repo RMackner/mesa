@@ -166,7 +166,7 @@ BuildRequires:  pkgconfig(libomxil-bellagio)
 %endif
 BuildRequires:  pkgconfig(libelf)
 BuildRequires:  pkgconfig(libglvnd) >= 1.3.2
-BuildRequires:  llvm-devel >= 7.0.0
+BuildRequires:  llvm-devel
 %if 0%{?with_opencl}
 BuildRequires:  clang-devel
 BuildRequires:  pkgconfig(libclc)
