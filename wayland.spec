@@ -154,8 +154,9 @@ Wayland server library
 	
 %build
 	
-meson build-gcc
-CC=clang CXX=clang++ meson build-clang
+%meson
+	
+%meson_build
 	
 	
 %install
