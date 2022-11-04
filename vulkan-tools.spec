@@ -34,6 +34,8 @@ Vulkan tools
 
 
 %build
+mkdir build
+cd build
 cmake -DVULKAN_HEADERS_INSTALL_DIR=absolute_path_to_install_dir ..
 make
 
