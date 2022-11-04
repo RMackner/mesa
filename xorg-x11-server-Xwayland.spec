@@ -1,15 +1,15 @@
-%global commit cb33e0d27892b885b0d86b5f99af2b71f660de56
+%global commit 459e2855730a30bb50f4836f2ff6153841bf843c
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
-#global gitdate 20210201
+#global gitdate 20221024
 %global pkgname %{?gitdate:xserver}%{!?gitdate:xwayland}
 
 %global default_font_path "catalogue:/etc/X11/fontpath.d,built-ins"
 
 Summary:   Xwayland
 Name:      xorg-x11-server-Xwayland
-Version:   22.1.3
-Release:   2%{?gitdate:.%{gitdate}git%{shortcommit}}%{?dist}
+Version:   22.1.5
+Release:   1%{?gitdate:.%{gitdate}git%{shortcommit}}%{?dist}
 
 URL:       http://www.x.org
 %if 0%{?gitdate}
