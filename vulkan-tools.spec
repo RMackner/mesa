@@ -34,12 +34,12 @@ Vulkan tools
 
 
 %build
-%cmake3 -GNinja -DCMAKE_BUILD_TYPE=Release -DGLSLANG_INSTALL_DIR=%{_prefix}
-%cmake3_build
+cmake -DVULKAN_HEADERS_INSTALL_DIR=absolute_path_to_install_dir ..
+make
 
 
 %install
-%cmake3_install
+make install
 
 %files
 %license LICENSE.txt
