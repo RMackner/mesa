@@ -1,4 +1,4 @@
-%global commit 459e2855730a30bb50f4836f2ff6153841bf843c
+%global commit f8795da303f232de031cc25cb30d2707a9a0fc18
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 #global gitdate 20221024
